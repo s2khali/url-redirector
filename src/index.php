@@ -1,0 +1,3 @@
+<h1>REDIRECT!</h1>
+
+<?= $_SERVER['REQUEST_URI'] ?>
