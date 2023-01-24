@@ -8,6 +8,8 @@ RewriteCond %{HTTP:X-Domain-Name} ^(.+).verylongurl.com$  [OR]
 RewriteCond %{HTTP_HOST} ^(.+).verylongurl.com$
 RewriteRule ^$ form.php [QSA,L]
 
+RewriteCond %{HTTP:X-Domain-Name} ^(.+).verylongurl.com$  [OR]
+RewriteCond %{HTTP_HOST} ^(.+).verylongurl.com$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [QSA,L]
